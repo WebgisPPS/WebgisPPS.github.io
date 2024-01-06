@@ -1,0 +1,45 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Login Page </title>  
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Transparent login form using html and css" />
+<meta name="keywords" content="Transparent login form, login form, HTML, css, Background Blur, login form using html and css, Avatar Icon, Login With Facebook, Login with Google" />
+<meta name="author" content="HTMLCSS3TUTORIALS" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <div class="blur"></div>
+    <div class="formContent blur"> <img src="images/avtar.jpg" class="avatarImg"> 
+    <section>
+    <center> <h2> Login Webgis PPS </h2> </center>  
+            <label>Username : </label>   
+            <div class="username-input">
+                <input type="text" id="username" placeholder="Enter Username">  
+            </div>
+            <label>Password : </label>
+            <div class="username-input">
+                <input type="password" id="password" placeholder="Enter Password">
+            </div>
+            <input type="submit" name="submit" value="Login" onclick="func()">   
+        </form>
+        </section>
+    <script> 
+        function func(){
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if(username== "adminpps" && password == "surabaya1"){
+                alert("Login Successfully")
+                window.location.assign("index-2.html");
+            }
+        else{
+                alert("USer / Pass Salah, Coba Lagi Ye");
+                return;
+            }
+        }
+    </script>     
+
+</body>     
+</html>
